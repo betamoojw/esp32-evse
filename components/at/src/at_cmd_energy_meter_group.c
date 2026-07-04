@@ -48,7 +48,7 @@ static int var_voltage_read(const struct cat_variable* var)
 {
     var_u32_1 = energy_meter_get_l1_voltage() * 1000;
     var_u32_2 = energy_meter_get_l2_voltage() * 1000;
-    var_u32_3 = energy_meter_get_l2_voltage() * 1000;
+    var_u32_3 = energy_meter_get_l3_voltage() * 1000;
 
     return 0;
 }
